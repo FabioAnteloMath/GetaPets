@@ -9,11 +9,27 @@ Get a Pet é uma plataforma que conecta pessoas que desejam adotar pets com pess
 - Sistema de autenticação completo com JWT
 - Cadastro e login de usuários
 - Verificação de usuário logado
+- Edição de perfil de usuário com upload de imagem
+- Validações completas de dados do usuário
 - Modelo de dados para Pets e Usuários
 - API RESTful com as seguintes rotas:
   - `/users/register`: Cadastro de novos usuários
   - `/users/login`: Autenticação de usuários
   - `/users/checkuser`: Verificação de usuário autenticado
+  - `/users/edit`: Atualização de dados do usuário
+  - `/users/:id`: Busca de usuário por ID
+
+### Funcionalidades de Usuário
+- Registro com validações completas
+- Login com autenticação JWT
+- Edição de perfil com:
+  - Atualização de nome
+  - Atualização de e-mail com verificação de duplicidade
+  - Atualização de telefone
+  - Alteração de senha com confirmação
+  - Upload de imagem de perfil
+- Visualização de perfil
+- Proteção de rotas com middleware de autenticação
 
 ### Banco de Dados
 - MongoDB como banco de dados
@@ -73,9 +89,12 @@ O projeto utiliza algumas variáveis de ambiente que precisam ser configuradas:
 ## 🚧 Em Desenvolvimento
 - Interface do usuário (Frontend)
 - Funcionalidades de adoção de pets
-- Upload de imagens
-- Gerenciamento de perfil de usuário
 - Sistema de mensagens entre usuários
+- Dashboard do usuário
+- Listagem de pets disponíveis para adoção
+- Sistema de busca e filtros de pets
+- Histórico de adoções
+- Notificações de interesse em adoção
 
 ## 👥 Contribuição
 Contribuições são sempre bem-vindas! Para contribuir:
